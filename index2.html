@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="CSS/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormularioDeContacto</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="fondo">
+            <form method="post" action="index.html">
+                <div class="titulo">
+                    <h1>Formulario de Contacto</h1>
+                </div>
+
+                <div class="dentro">
+
+                    <fieldset>
+                        <legend>Datos Personales de Gran importancia</legend>
+
+                        <label for="name">Nombre y Apellido</label><br>
+                        <input type="text" name="nombreyapellido" id="name" required><br>
+
+                        <label for="phone">Telefóno</label><br>
+                        <input type="number" name="telefono" id="phone" required><br>
+
+                        <label for="reason">Seleccione proposito del contacto</label><br>
+                        <select name="proposito" id="reason">
+                        <option value="">--Seleccione</option>
+                        <option value="pro">Proyecto de Desarrollo</option>
+                        <option value="pag">Página Web</option>
+                        <option value="res">Rescate por Mister Increible</option>
+                        </select><br>
+
+                        <label for="adicional">Detalles importantes</label><br>
+                        <textarea name="descripcion" id="adicional" rows="15" cols="30"></textarea><br>
+
+                        <label for="poder">Superpoder fávorito</label><br>
+
+                        <input type="radio" name="super" value="fuerza" id="fz" checked>
+                        <label for="fz">SuperFuerza</label><br>
+
+                        <input type="radio" name="super" value="campodefuerza" id="cp">
+                        <label for="cp">Campos de Fuerza</label><br>
+
+                        <input type="radio" name="super" value="elasticidad" id="el">
+                        <label for="el">Elasticidad</label><br>
+
+                        <input type="radio" name="super" value="velocidad" id="vl">
+                        <label for="vl">SuperVelocidad</label><br>
+
+                        <a href="index.html">VOLVER AL CURRICULUM</a><br>
+                    </fieldset>
+                    <div class="botones">
+                        <div class="boton-e">
+                            <input type="submit" name="enviar" value="Enviar a Ms.Increible">
+                        </div>
+                        <div class="boton-b">
+                            <input type="reset" name="borrar" value="Eliminar Solicitación">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<!--Código de Frigo Gaston Taller G509-->
