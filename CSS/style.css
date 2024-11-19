@@ -33,7 +33,9 @@ img {
     border-radius: 5%;
     text-align: center;
     padding: 2em 0;
-    transition: .10s ease;
+    animation-name: con;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
 }
 
 .conocimientos:hover {
@@ -55,6 +57,15 @@ img {
     }
 }
 
+@keyframes con {
+    from {
+        transform: translateX(-200%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
 .sobremi:hover {
     background-image: url(../Imagenes/logobueni.png);
     background-size: cover;
@@ -70,6 +81,15 @@ img {
         font-size: x-large;
         font-weight: bolder;
         text-shadow: 1px 0px 0px rgb(238, 143, 0), 0px 1px 0px rgb(255, 166, 0), -1px 0px 0px rgb(255, 166, 0), 0px -1px 0px rgb(255, 166, 0);
+    }
+}
+
+@keyframes sob {
+    from {
+        transform: translateX(-200%);
+    }
+    to {
+        transform: translateX(0%);
     }
 }
 
@@ -97,18 +117,49 @@ img {
     /*opacity*/
 }
 
+@keyframes exp {
+    from {
+        transform: translateX(200%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
 .foto {
     /*Div de la imagen de Mr.Increible*/
     margin-top: 25px;
     margin-left: 200px;
     border: 10px;
     border-color: black;
+    animation-name: logo;
+    animation-duration: 10s;
+}
+
+@keyframes logo {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100%;
+    }
 }
 
 .yo {
     margin-top: 100px;
     margin-right: 50px;
     margin-left: 50px;
+    animation-name: yo;
+    animation-duration: 10s;
+}
+
+@keyframes yo {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100%;
+    }
 }
 
 .abajo {
@@ -126,7 +177,9 @@ img {
     border-radius: 5%;
     text-align: center;
     padding: 2em 0;
-    transition: background-color 1s;
+    animation-name: sob;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
 }
 
 .experiencia {
@@ -139,7 +192,9 @@ img {
     border-radius: 5%;
     text-align: center;
     padding: 2em 0;
-    transition: background-color 1s;
+    animation-name: exp;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
 }
 
 p {
@@ -185,6 +240,17 @@ a[href="index.html"] {
     /*Para posicionar los botones*/
     display: flex;
     justify-content: space-around;
+    animation-name: bot;
+    animation-duration: 3s;
+}
+
+@keyframes bot {
+    from {
+        transform: translateY(-200%);
+    }
+    to {
+        transform: translateY(0%);
+    }
 }
 
 .boton-e {
@@ -239,6 +305,65 @@ textarea {
     background-image: url(../Imagenes/edificios.png);
     background-repeat: no-repeat;
     background-size: cover;
+    animation-name: fond;
+    animation-duration: 3s;
+}
+
+@keyframes fond {
+    from {
+        transform: translateY(-200%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+.cont-f {
+    display: flex;
+    justify-content: center;
+}
+
+.frozono {
+    background-image: url(../Imagenes/bachata.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 500px;
+    animation-name: frozono;
+    animation-duration: 5s;
+}
+
+@keyframes frozono {
+    from {
+        transform: translateY(-200%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+.volv {
+    background-color: rgb(83, 186, 250);
+    width: 15%;
+    height: 15%;
+    margin-top: 300px;
+    margin-left: 20px;
+    border-radius: 50%;
+    text-align: center;
+    a {
+        color: bisque;
+    }
+    animation-name: volv;
+    animation-duration: 5s;
+}
+
+@keyframes volv {
+    from {
+        transform: translateY(-10000%);
+    }
+    to {
+        transform: translateX(0%);
+    }
 }
 
 
